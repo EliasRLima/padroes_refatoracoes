@@ -4,10 +4,9 @@ public class Deposito {
     private String numeroEnvelope;
     private Movimentacao movimentacao;
 
-    public Deposito(String numeroEnvelope, double valor) {
+    public Deposito(String numeroEnvelope, Movimentacao movimentacao) {
         this.numeroEnvelope = numeroEnvelope;
-        movimentacao = new Movimentacao();
-        movimentacao.setValor(valor);
+        this.movimentacao = movimentacao;
     }
 
     public String getNumeroEnvelope() {
@@ -22,7 +21,7 @@ public class Deposito {
         return movimentacao;
     }
 
-    private void setMovimentacao(Movimentacao movimentacao) {
+    public void setMovimentacao(Movimentacao movimentacao) {
         this.movimentacao = movimentacao;
     }
 }

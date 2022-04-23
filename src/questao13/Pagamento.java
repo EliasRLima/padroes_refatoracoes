@@ -5,11 +5,10 @@ public class Pagamento {
     private String formaDePagamento;
     private Movimentacao movimentacao;
 
-    public Pagamento(String favorecido, String formaDePagamento, double valor) {
+    public Pagamento(String favorecido, String formaDePagamento, Movimentacao movimentacao) {
         this.favorecido = favorecido;
         this.formaDePagamento = formaDePagamento;
-        this.movimentacao = new Movimentacao();
-        this.movimentacao.setValor(valor);
+        this.movimentacao = movimentacao;
     }
 
     public String getFavorecido() {
@@ -32,7 +31,7 @@ public class Pagamento {
         return movimentacao;
     }
 
-    private void setMovimentacao(Movimentacao movimentacao) {
+    public void setMovimentacao(Movimentacao movimentacao) {
         this.movimentacao = movimentacao;
     }
 }
