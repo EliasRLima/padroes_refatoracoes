@@ -1,0 +1,1 @@
+O problema dessa abordagem é que o objeto herda metodos que nao deve implementar, por exemplo deposito herda encargos mesmo sem ter encargos. Por meio da composicao, a classe movimentacao implementa suas responsabilidades e deposito/pagamento nao precisam implementar metodos nao presentes em suas regras.
