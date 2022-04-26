@@ -1,4 +1,4 @@
-package questao11.problema;
+package atv01.questao11.problema;
 
 public class PagadorDeFuncionario {
 

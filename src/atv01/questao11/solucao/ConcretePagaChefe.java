@@ -1,4 +1,4 @@
-package questao11.solucao;
+package atv01.questao11.solucao;
 
 public class ConcretePagaChefe implements PagadorStrategy{
 
